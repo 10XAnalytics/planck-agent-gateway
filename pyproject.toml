@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planck-agent-gateway"
+version = "0.1.0"
+description = "Routing gateway for Seraphim |LZ⟩ collapsed agent decisions into QUANTA operational handlers"
+authors = [
+    { name = "Perfect Squared Inc. | P2 Labs", email = "contact@perfectsquaredinc.com" }
+]
+license = { text = "Apache-2.0" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["quantum", "agents", "gateway", "routing", "QUANTA", "seraphim"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+seraphim = ["seraphim-logic-core>=0.1.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "seraphim-logic-core>=0.1.0",
+    "numpy>=1.24",
+]
+
+[project.urls]
+Homepage = "https://github.com/10XAnalytics/planck-agent-gateway"
+Repository = "https://github.com/10XAnalytics/planck-agent-gateway"
+"Bug Tracker" = "https://github.com/10XAnalytics/planck-agent-gateway/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["planck_agent_gateway*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
