@@ -5,6 +5,12 @@ Perfect Squared Inc. | P2 Labs | Seraphim |LZ⟩
 
 > *Agents of the Highest Order*
 
+[![PyPI version](https://img.shields.io/pypi/v/planck-agent-gateway.svg)](https://pypi.org/project/planck-agent-gateway/)
+[![Python](https://img.shields.io/pypi/pyversions/planck-agent-gateway.svg)](https://pypi.org/project/planck-agent-gateway/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-55%20passing-brightgreen.svg)](tests/)
+[![GitHub](https://img.shields.io/badge/GitHub-10XAnalytics-black.svg)](https://github.com/10XAnalytics/planck-agent-gateway)
+
 ---
 
 ## Overview
